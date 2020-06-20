@@ -71,14 +71,14 @@ So, what _actually_ happened was that after seeing the "whatnow" clue, a certain
 
 ## Episode 5
 
-While the events of whatnow 2 were occurring, people were trying to figure out what was happening with episode 5. It was quickly concluded that the message contained 3 parts:
+Using the results of the MangaDex comment, it was concluded that the message contained 3 parts:
 
 - `28C4A85D` corresponded to the hash of the MKV file.
 - `#0:2(eng)` corresponded to the subtitle track. One could get this by searching online or using a tool like `mkvextract` as follows:
 
-```bash
-mkvextract tracks \[GJM\]\ Kaguya-sama\ \~Love\ is\ War\~\ S2\ -\ 05\ \[28C4A85D\].mkv\ 2:05.ass
-```
+  ```bash
+  mkvextract tracks \[GJM\]\ Kaguya-sama\ \~Love\ is\ War\~\ S2\ -\ 05\ \[28C4A85D\].mkv\ 2:05.ass
+  ```
 
 - `#166:13-22` likely corresponded to some kind of string indexing or subtraction.
 
