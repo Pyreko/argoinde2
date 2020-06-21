@@ -55,7 +55,7 @@ Searching for this in the Kaguya server would lead to an edited message:
 
 ![whatnow](./images/whatnow.jpg)
 
-This was supposed to be a prompt for people to visit a BGS server. Unfortunately, we didn't realize there was more than one... or two... there were three. We then got stuck on this for a while. Alg eventually bailed us out by getting someone who was in [that third BGS server](https://discord.gg/GvwE3n9) to check and revealed:
+This was supposed to be a prompt for people to visit a BGS server. Unfortunately, we didn't realize which one (it was some smaller third one apparently). We then got stuck on this (see [Bing](#bing) for what happened during this). Alg eventually bailed us out of this clue by getting someone who was in [that third BGS server](https://discord.gg/GvwE3n9) to check and revealed:
 
 ![bgs](./images/bgs.jpg)
 
@@ -67,7 +67,7 @@ Note that this message was different initially; it was changed during the ARG to
 
 ### Bing
 
-So, what _actually_ happened was that after seeing the "whatnow" clue, a certain member just _Binged_ "Algoinde" and searched through his information on Mangadex... leading to the comment. This lead to actually skipping a bit of steps (namely going to the BGS server) and starting [Episode 5](#episode-5) earlier than expected. However, during the solving of that, that's when Alg bailed us out in showing the BGS server.
+So, what _actually_ happened was that after seeing the "whatnow" clue, a _certain_ member just **Binged** "Algoinde" and searched through his information on Mangadex... leading to the comment. This lead to actually skipping a step (namely going to the BGS server) and starting [Episode 5](#episode-5) earlier than expected without having actually solved the `Whatnow` clue. However, during the solving of that, that's when Alg bailed us out in showing the BGS server, leaving us to be back to not having skipped anything.
 
 ## Episode 5
 
@@ -112,7 +112,7 @@ The important part of the extracted string was `(641,986)`. adding the `+ (-600,
 
 ## a00000000
 
-Googling `a00000000` lead to a [Twitter account](https://twitter.com/a00000000), named "Iroha". After getting stuck for a while, this was discovered to be a prompt to go to the [Oregairu server](https://discord.gg/PQ2kJCv) and look for a comment from Alg:
+Googling `a00000000` lead to a [Twitter account](https://twitter.com/a00000000), named "Iroha". After getting stuck for a while, this was discovered to actually be a reference to [the Iroha from Oregairu](https://oregairu.fandom.com/wiki/Iroha_Isshiki) and prompt to go to the [Oregairu server](https://discord.gg/PQ2kJCv) and look for a comment from Alg:
 
 ![oregairu](./images/oregairu.jpg)
 
