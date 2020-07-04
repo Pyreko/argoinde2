@@ -21,7 +21,9 @@ perhaps some of the other things that were attempted before we hit the solutions
 ## Introduction
 
 For some background, [an ARG is short for "alternate reality game"](https://en.wikipedia.org/wiki/Alternate_reality_game). Basically, it's a giant
-puzzle. Think those mystery shows where you have pegs and rope connecting a bunch of clues.
+puzzle. Think those mystery shows where you have pins and rope connecting a bunch of clues.
+
+![WHAT DOES IT ALL MEAN?!?!?!?](./images/conspiracy.jpg)
 
 This was not the first one created by Alg (or even the second one on the server, appu did one as well). There was one hosted way back in 2019 when `#tech-science` was still but a fledgling channel, not yet overrun by Linux shills and Guya. One can read about this one [here](https://docs.google.com/document/d/1kpnfIyhpEnKLNH9DcDtIhPSthILxaVB0IFeWRotNpbs/edit?usp=sharing).
 
