@@ -2,8 +2,9 @@
 
 At last. The long-awaited, second ARG.
 
-This is a long one, so let's begin. The following gives our journey through solving this set of puzzles, as well
-as hopefully explaining how some things lead to other clues.
+The following walkthrough gives our journey through solving this set of puzzles, as well
+as hopefully explaining how some things lead to other clues, the required thought process, and
+perhaps some of the other things that were attempted before we hit the solutions.
 
 ## Table of Contents
 
