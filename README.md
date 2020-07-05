@@ -17,6 +17,7 @@ perhaps some of the other things that were attempted before we hit the solutions
 - [Episode 4](#episode-4)
 - [a00000000](#a00000000)
 - [The Wait](#the-wait)
+- [The Return](#the-return)
 
 ## Introduction
 
@@ -121,7 +122,7 @@ Googling `a00000000` lead to a [Twitter account](https://twitter.com/a00000000),
 
 ## The Wait
 
-After finishing the Oregairu clue, we got stuck for a _long_ time. We were not sure how to use the Oregairu clue - what could we do with this half-infinity thing?
+After finishing the Oregairu clue, we got stuck for a _long_ time. We were not sure how to use the Oregairu clue - what could we do with this ⧜ thing?
 
 Eventually, Algoinde came back to prompt us to re-use one of existing numbers - and this lead to re-using `16616` as "chapter 166, page 16" of Kaguya. Looking at the chapter on [guya.moe](https://guya.moe/166/16) revealed a modified chapter page and some hidden dots representing Morse code, spelling out:
 
@@ -134,3 +135,41 @@ or, in plaintext, `wait.htmr`. Assuming this meant `wait.html`, we went to [Alg'
 ![wait](./images/wait1.jpg)
 
 We had known well in advance that there was a time gate at some point - and that we had hit it.
+
+## The Return
+
+A few weeks later, Alg gave a heads up - the ARG was back.
+
+Checking [wait.html](https://algoinde.ru/wait.html) no longer worked. However, [https://algoinde.ru/wait.html](https://algoinde.ru/wait.html), which was the original morse code deciphering, _did_ work, leading to a file with the contents:
+
+```
+4172838-5
+```
+
+Checking [https://algoinde.ru/4172838-5](https://algoinde.ru/4172838-5) would in turn give a file with the contents:
+
+```
+wait.htmr
+```
+
+which didn't really help.
+
+Googling "4172838-5" lead to results for the constellation Orion. If one checks the server message history, one is lead to [this message](https://discordapp.com/channels/329966811057618944/643650478067941385/6683411505197875):
+
+![orion](./images/orion.jpg)
+
+This was a reference to [Alg's submission](https://www.youtube.com/watch?v=glJfKeBzjLg&feature=youtu.be) to the 2019 art contest. Inspecting the video, there was an annotation at the end that lead to [another](https://www.youtube.com/watch?v=b3CHFS1xMLU) video, where the description wrote:
+
+![youtube description](./images/helvetica.jpg)
+
+Furthermore, checking the Russian transcript of the submission video revealed the following text:
+
+```
+Орион не при чем - здесь есть другая звезда, сравнимая по яркости.
+```
+
+or translated (courtesy of Witch):
+
+```
+Orion has nothing to do with this, another star with comparable brightness exists here.
+```
