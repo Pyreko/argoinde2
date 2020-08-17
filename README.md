@@ -415,7 +415,7 @@ So someone decided to plot the following points on a map:
 
 - Shuuchi-kasagami station
 - 大洲 鮎 キャンプ
-- Torch values as coordinates
+- Torch values as coordinates (we used (33.51, 131.66))
 
 and lo and behold, in the middle, was an island that contained two Buddhist temples, Jofukiji and Jokeiji.
 
