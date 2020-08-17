@@ -18,6 +18,12 @@ perhaps some of the other things that were attempted before we hit the solutions
 - [a00000000](#a00000000)
 - [The Wait](#the-wait)
 - [The Return](#the-return)
+- [To Infinity and Beyond](#to-infinity-and-beyond)
+  - [Unsolved Clue](#unsolved-clue)
+- [Minecraft](#minecraft)
+  - [The End](#the-end)
+  - [Nether](#nether)
+- [Finale... For Now](#finale-for-now)
 
 ## Introduction
 
@@ -134,7 +140,7 @@ or, in plaintext, `wait.htmr`. Assuming this meant `wait.html`, we went to [Alg'
 
 ![wait](./images/wait1.jpg)
 
-We had known well in advance that there was a time gate at some point - and that we had hit it.
+We had known well in advance that there was a time gate at some point, so now it was time to, well, wait.
 
 ## The Return
 
@@ -173,3 +179,254 @@ or translated (courtesy of Witch):
 ```
 Orion has nothing to do with this, another star with comparable brightness exists here.
 ```
+
+The [right acension](https://en.wikipedia.org/wiki/Right_ascension) of a star is measured in hours, minutes, and seconds. Using the given clue, we obtained a timestamp to Kaguya, episode 3, which mentions Kimi no Shiranai Monogatari. This lead to a comment on the [Kimi no Shiranai Monogatari](https://bakemonogatari.fandom.com/wiki/Kimino_Shiranai_Monogatari) wiki page:
+
+![kimi](./images/kimi.jpg)
+
+The clue of importance here was the username - this was an IP address, [185.14.186.30](http://185.14.186.30/), which had the following contents:
+
+![incinf](./images/incinf.jpg)
+
+## To Infinity and Beyond
+
+"inc_inf", in combination with the "⧜" clue from before, was a clue to the document ["U+29DC aka Documento Continuo"](http://www.linkartcenter.eu/public/editions/Enrico_Boccioletti_U%2B29DC_aka_Documento_Continuo_2014.pdf).
+
+On page 257, the following text was there:
+
+```
+#Stacktivism
+A term coined by Jay Springett
+Which posits that “we cannot have a conversation about something whilst it remains unseen” derived from Benjamin Bratton’s work on ‘The Stack’
+#stacktivism is a term that attempts to give form to a critical conversation & line of enquiry around infrastructure & the relationship we have to it, whilst asking the question “who controls the means of  not dying?”
+
+http://pastebin.com/bm1EKB9H
+
+BY: BEN_VICKERS ON OCT 21ST, 2013
+SYNTAX: NONE
+SIZE: 6.61 KB
+HITS: 545
+EXPIRES: NEVER
+```
+
+The file, `mask.link`, contained the following text:
+
+```bash
+cut -d"/" -f4
+```
+
+Running `cut` on the link in page text gave:
+
+```
+bm1EKB9H
+```
+
+`mask.link.2`, a hint that was actually later provided by Alg, contained:
+
+```
+0 = _
+```
+
+Now, using the previous clue of `a0x8`, we got the string "abm1EKB9H", which upon searching for in the server:
+
+![grid](./images/grid.jpg)
+
+The link actually contains hidden zero-width spaces, which you can see if you copy and check it:
+
+```
+y o u  n e e d  t o  l o o k  i n t o  t h e  w h i t e
+t h e  g r i d  c o n t i n u e s  e v e r y  w e e k
+
+y o u  n e e d  t o  l o o k  i n t o  t h e  b l a c k
+t h e  s p a c e  i s  l o o k i n g  v e r y  t h i n
+https://alg.e/‍‍‌‍‍‌‌‍‍‌‍‌‍‍‍‍
+```
+
+```python
+>>> s = 'https://alg.e/‍‍'
+>>> s.encode("unicode_escape")
+b'https://alg.e/\\u200d\\u200d\\u200c\\u200d\\u200d\\u200c\\u200c\\u200d\\u200d\\u200c\\u200d\\u200c\\u200d\\u200d\\u200d\\u200d'
+```
+
+Replacing `https://alg.e/` with `zws.im/` links to [https://algoinde.ru/25566](https://algoinde.ru/25566).
+
+### Unsolved clue
+
+Alg later revealed that the rest of the string itself contains a clue, which we were supposed to use later. However, we skipped it and actually never used it, so... this clue isn't totally solved, for anyone interested.
+
+## Minecraft
+
+25566 was a port. So, we tried to visit [http://shuchiin.algoinde.ru:25566/](http://shuchiin.algoinde.ru:25566/) and [
+185.14.186.30:25566](185.14.186.30:25566) (both links are the same), which gave an error like:
+
+```java
+«Ё{"translate":"disconnect.genericReason","with":["Internal Exception: io.netty.handler.codec.DecoderException: java.lang.IndexOutOfBoundsException: Index: 69, Size: 1"]}
+```
+
+Googling this error turned out to be a common Minecraft error. And lo and behold, checking for a server on [mcsrvstat](https://mcsrvstat.us/server/shuchiin.algoinde.ru:25566/) revealed:
+
+![it's always been minecraft](./images/minecraft.jpg)
+
+...it was fscking Minecraft.
+
+### The End
+
+Entering the server, there was a tower containing a chest with compasses named "Τέλος" and pointing to different directions. This indicated the compasses were pointing to lodestones.
+
+![telos](./images/telos.jpg)
+
+"Τέλος" means "end goal" in Greek. So, this indicated that we had to enter the End, kill the Ender Dragon to use the compasses to reach some destination.
+
+So for the next few hours, a few players spent time playing Minecraft to reach the End and completing the game. Upon doing so, the players followed the compasses and explored the end.
+
+The first clue found was both:
+
+![4018](./images/4018.jpg)
+
+![1316](./images/1316.jpg)
+
+where both were in the same location. This was to represent chapter 40, page 18, with a square bounding box from (430, 673) to (483, 683):
+
+![ishigami](./images/ishigami.jpg)
+
+giving:
+
+![gami](./images/gami.jpg)
+
+So, we got "gami" as [13:16].
+
+We also found an end city containing 3 pillars. One contained a sign with the text "大洲 鮎 キャンプ":
+
+![大洲](./images/大洲.jpg)
+
+The third had:
+
+![blank](./images/blank.jpg)
+
+In the middle of an end city, we found a Shulker with a swastika name, and signs underneath it forming a "+":
+
+![shulker](./images/buddhist_shulker.jpg)
+
+Lastly, in one tower, we found a new set of compasses pointing in different directions, named "gqELqRCnW6g" - this is a valid YouTube video link, to the Minecraft Yogscast parody ["Screw the Nether"](https://www.youtube.com/watch?v=gqELqRCnW6g), indicating these compasses were tied to a lodestone in the Nether.
+
+![gqELqRCnW6g](./images/gqELqRCnW6g.jpg)
+
+#### Nether
+
+Traversing to the Nether using these coordinates revealed a location with buttons, redstone torches, and soul torches:
+
+![nether](./images/nether.jpg)
+
+The order was as follows:
+
+```
+1R
+3B
+1R
+BUTTON
+1R
+5B
+1R
+3B
+1R
+4B
+5R
+END
+SECOND:
+1R
+5B
+3R
+BUTTON
+1R
+1B
+1R
+1B
+1R
+3B
+1R
+1B
+1R
+2B
+2R
+2B
+3R
+END
+```
+
+## Finale... For Now
+
+So by the time we hit this point, we had a plethora of clues to work with.
+
+Putting together all the string clues we had gotten, we had:
+
+```
+[1:s]
+[2:h]
+[3:u]
+[4:u]
+[5-7:å°º]
+[8:-]
+[10:a]
+[13-16:GAMI]
+```
+
+One of the clues that didn't make sense was the 5-7 clue. We found that putting `å°º` into a Unicode decoder gave the Chinese character for ruler, "尺", which translates to "chi". This therefore left us with:
+
+```
+[1:s]
+[2:h]
+[3:u]
+[4:u]
+[5-7:chi]
+[8:-]
+[10:a]
+[13-16:GAMI]
+```
+
+Putting this in order, we had `shuuchi-_a__gami`. The missing letters were actually supposed to be obtained from solving the [Unsolved Clue](#unsolved-clue), but with what we had, we guessed this string was supposed to represent "Shuuchi-kasagami", which is a train station.
+
+So, at this point, we had these following clues:
+
+- "Shuuchi-kasagami"
+- Blank sign with "[ ]"
+- Shulker with the swastika and "+" sign
+- "大洲 鮎 キャンプ"
+- Torch code
+
+Solving the torch code, we concluded that it was representing decimal values in binary. Using either the red or blue torches as 1 were valid, so we tried both:
+
+```
+100001.10000010001000011111 -> 33.50833034515380859375
+10000011.10101000101001100111 -> 131.65878963470458984375
+
+or
+
+011110.01111101110111100000 -> 30.491668701171875
+01111100.01010111010110011000 -> 124.34120941162109375
+```
+
+"大洲 鮎 キャンプ" was also a real location that could be found on Google Maps.
+
+The "[ ]" also seemed to be referencing the "Shuuchi-kasagami" result.
+
+Then, the "+" sign under the Shulker reminded some users of a [Plus code](https://plus.codes/). And the swastika Shulker was in the middle of a triangle. The "卍" symbol also refers to Buddhist temples on maps.
+
+So someone decided to plot the following points on a map:
+
+- Shuuchi-kasagami station
+- 大洲 鮎 キャンプ
+- Torch values as coordinates
+
+and lo and behold, in the middle, was an island that contained two Buddhist temples, Jofukiji and Jokeiji.
+
+We weren't sure which one to pick, but after some triangle magic (and praying), we concluded on picking Jokeiji:
+
+![triangulation](./images/triangulation.jpg)
+
+From here, we submitted the Plus code of this temple, `8Q5JP4HR+36`.
+
+And after a long silence, we were greeted with:
+
+![done... for now](./images/done_for_now.jpg)
+
+And as such, this is where the ARG stands as of writing.
